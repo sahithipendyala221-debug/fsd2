@@ -1,12 +1,11 @@
 class LibraryBook {
 
-    
+
     public title: string;
     public author: string;
     public price: number;
     public copies: number;
 
-    
     constructor(title: string, author: string, price: number = 500, copies: number = 1) {
         this.title = title;
         this.author = author;
