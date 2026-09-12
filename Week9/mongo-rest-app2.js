@@ -5,7 +5,7 @@ const app = express();
 const PORT = 3000;
 
 // MongoDB Atlas connection
-mongoose.connect("mongodb+srv://24b01a4596_db_user:<db_password>@cluster0.wk5r4dd.mongodb.net/?appName=Cluster0")
+mongoose.connect("mongodb://24b01a4596_db_user:Password@ac-qamc9no-shard-00-00.wk5r4dd.mongodb.net:27017,ac-qamc9no-shard-00-01.wk5r4dd.mongodb.net:27017,ac-qamc9no-shard-00-02.wk5r4dd.mongodb.net:27017/?ssl=true&replicaSet=atlas-dcqqcw-shard-0&authSource=admin&appName=Cluster0")
     .then(() => console.log("MongoDB connected"))
     .catch(err => console.log(err));
 
