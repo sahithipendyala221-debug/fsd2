@@ -5,7 +5,8 @@ const app = express();
 const PORT = 3000;
 
 // MongoDB Atlas connection
-mongoose.connect("dburl")
+//not placing exact url ,because it contains password
+mongoose.connect("dburl") 
     .then(() => console.log("MongoDB connected"))
     .catch(err => console.log(err));
 
