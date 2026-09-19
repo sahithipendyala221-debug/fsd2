@@ -8,6 +8,7 @@ const PORT = 3000;
 app.use(express.json());
 
 // MongoDB Atlas connection
+//not placed url,because it contains password
 const dbURI = "dburl"
 mongoose
     .connect(dbURI)
